@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body class="font-sans">
+    <div class="topbar w-full bg-white border-b-2 border-gray-100 drop-shadow-sm z-50">
+        <div class="container mx-auto h-16 py-2 flex items-center">
+            <div class="relative w-full flex items-center flex-row">
+                <div class="logo basis-1/4">
+                    <a class="flex items-center " href="#">
+                        <span class="sr-only">Testing</span>
+                        <img class="h-8 w-auto sm:h-10" src="images/logo-icon.svg" alt="">
+                        <img class="ml-2 h-4 w-auto sm:h-6" src="images/logo-text.svg" alt="">
+                        <!-- <h4 class="text-lg font-bold">Tailwindcss</h4> -->
+                    </a>
+                </div>
+
+                <nav class="basis-1/2 ">
+                    <ul class="flex flex-row space-x-8 text-stone-900 font-semibold font-sm">
+                        <li>
+                            <a href=" #">Products </a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#">Documentation</a>
+                        </li>
+                        <li>
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="basis-1/4 justify-end">
+                    <ul class="flex justify-end space-x-4">
+                        <li><a class="p-3 hover:border border border-transparent rounded-md hover:border-indigo-800 hover:bg-white hover:text-indigo-800 hover:font-semibold"
+                                href="#">Login</a></li>
+                        <li><a class="bg-indigo-800 p-3 rounded-md border border-transparent text-center font-semibold text-white hover:border hover:border-indigo-800 hover:bg-white hover:text-indigo-800"
+                                href="#">Signup</a></li>
+                    </ul>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <main>
+        <div class="py-6 text-white h-96 flex flex-inline justify-center items-center"
+            style="background-image: linear-gradient(to left bottom, #42327a, #444091, #404eaa, #365dc3, #186ddc);">
+            <div class="text-center">
+                <h1 class="mb-8 text-5xl font-normal md:text-7xl lg:text-7xl">
+                    Our <span class="font-semibold">plans</span> for your <span class="font-semibold">strategies</span>
+                </h1>
+                <p class="text-lg font-normal text-gray-200">
+                    See below our main three plans for your business, for your startup and agency.
+                </p>
+                <p class="text-lg font-normal text-gray-200">
+                    It start from here! You can teach yourself what you really like.
+                </p>
+            </div>
+
+        </div>
+        <!-- pricing table start -->
+
+        <!-- Snippet -->
+        <section class="flex flex-col justify-center antialiased bg-gray-100 text-gray-600 min-h-screen p-4">
+            <div class="h-full">
+                <!-- Pricing -->
+                <div class="container mx-auto" x-data="{ annual: true }">
+                    <h2 class="text-3xl text-gray-800 font-bold text-center mb-4">Plans</h2>
+                    <!-- Toggle switch -->
+                    <div class="flex justify-center">
+                        <div class="flex items-center space-x-3 mb-8">
+                            <div class="text-sm text-gray-500 font-medium min-w-[120px] text-right">Monthly</div>
+                            <div class="relative select-none w-[44px]">
+                                <input type="checkbox" id="toggle" class="peer sr-only" x-model="annual" />
+                                <label
+                                    class="block overflow-hidden cursor-pointer h-6 rounded-full bg-gray-400 peer-checked:bg-indigo-500"
+                                    for="toggle">
+                                    <span
+                                        class="absolute block rounded-full w-5 h-5 top-0.5 left-0.5 right-1/2 bg-white shadow-sm transition-all duration-150 ease-out"
+                                        aria-hidden="true"></span>
+                                    <span class="sr-only">Pay annually</span>
+                                </label>
+                            </div>
+                            <div class="text-sm text-gray-500 font-medium min-w-[120px]">Annually <span
+                                    class="text-green-500">(-20%)</span></div>
+                        </div>
+                    </div>
+                    <!-- Pricing tabs -->
+                    <div class="grid grid-cols-12 gap-6">
+                        <!-- Tab 1 -->
+                        <div
+                            class="relative  col-span-full md:col-span-4 bg-white shadow-md rounded-sm border border-gray-200">
+                            <div class="absolute top-0 left-0 right-0 h-0.5 bg-green-500" aria-hidden="true"></div>
+                            <div class="px-5 pt-5 pb-6 border-b border-gray-200">
+                                <header class="flex items-center justify-center mb-2">
+                                    <div
+                                        class="w-6 h-6 rounded-full flex-shrink-0 bg-gradient-to-tr from-green-500 to-green-300 mr-3">
+                                        <svg class="w-6 h-6 fill-current text-white" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 17a.833.833 0 01-.833-.833 3.333 3.333 0 00-3.334-3.334.833.833 0 110-1.666 3.333 3.333 0 003.334-3.334.833.833 0 111.666 0 3.333 3.333 0 003.334 3.334.833.833 0 110 1.666 3.333 3.333 0 00-3.334 3.334c0 .46-.373.833-.833.833z" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-5xl text-gray-800 font-bold text-center">Basic</h3>
+                                </header>
+                                <div class="text-lg my-5 text-center">Ideal for individuals that need a custom solution
+                                    with custom
+                                    tools.</div>
+                                <!-- Price -->
+                                <div class="text-gray-800 font-bold mb-4 text-center">
+                                    <span class="text-4xl">$</span><span class="text-6xl"
+                                        x-text="annual ? '14' : '19'">14</span><span
+                                        class="text-gray-500 font-medium text-sm">/mo</span>
+                                </div>
+
+                            </div>
+                            <div class="px-10 pt-4 pb-5 mb-10">
+                                <!-- List -->
+
+                                <div class="mt-8 space-y-8 text-lg">
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
+                                            viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                        <span class="mx-4 text-gray-700 dark:text-gray-300">5 domains</span>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
+                                            viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                        <span class="mx-4 text-gray-700 dark:text-gray-300">WP Toolkit SE</span>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
+                                            viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                        <span class="mx-4 text-gray-700 dark:text-gray-300">Subscription
+                                            Management</span>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
+                                            viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                        <span class="mx-4 text-gray-700 dark:text-gray-300">Account Management</span>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
+                                            viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                        <span class="mx-4 text-gray-700 dark:text-gray-300">5 exclusive widgets</span>
+                                    </div>
+                                </div>
+                                <!-- CTA -->
+                                <button
+                                    class="w-full px-4 py-3 mt-10 font-bold tracking-wide text-blue-600 capitalize transition-colors duration-300 transform bg-white border border-blue-600  rounded-md hover:bg-blue-600 hover:text-white focus:outline-none focus:bg-blue-600 text-xl">
+                                    Choose Basic
+                                </button>
+                            </div>
+
+                        </div>
+                        <!-- Tab 2 -->
+                        <div
+                            class="relative col-span-full md:col-span-4 bg-white shadow-md rounded-sm border border-gray-200">
+                            <div class="absolute top-0 left-0 right-0 h-0.5 bg-blue-500" aria-hidden="true"></div>
+                            <div class="px-5 pt-5 pb-6 border-b border-gray-200">
+                                <header class="flex items-center justify-center mb-2">
+                                    <div
+                                        class="w-6 h-6 rounded-full flex-shrink-0 bg-gradient-to-tr from-blue-500 to-blue-300 mr-3">
+                                        <svg class="w-6 h-6 fill-current text-white" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 17a.833.833 0 01-.833-.833 3.333 3.333 0 00-3.334-3.334.833.833 0 110-1.666 3.333 3.333 0 003.334-3.334.833.833 0 111.666 0 3.333 3.333 0 003.334 3.334.833.833 0 110 1.666 3.333 3.333 0 00-3.334 3.334c0 .46-.373.833-.833.833z" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-5xl text-gray-800 font-bold">Standard</h3>
+                                </header>
+                                <div class="text-lg my-5 text-center">Ideal for individuals that need a custom solution
+                                    with custom
+                                    tools.</div>
+                                <!-- Price -->
+                                <div class="text-gray-800 font-bold mb-4 text-center">
+                                    <span class="text-4xl">$</span><span class="text-6xl"
+                                        x-text="annual ? '34' : '39'">34</span><span
+                                        class="text-gray-500 font-medium text-sm">/mo</span>
+                                </div>
+                            </div>
+                            <div class="px-10 pt-4 pb-5 mb-10">
+                                <!-- List -->
+
+                                <div class="mt-8 space-y-8 text-lg">
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
+                                            viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                        <span class="mx-4 text-gray-700 dark:text-gray-300">10 domains</span>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
+                                            viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                        <span class="mx-4 text-gray-700 dark:text-gray-300">WP Toolkit SE</span>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
+                                            viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                        <span class="mx-4 text-gray-700 dark:text-gray-300">Subscription
+                                            Management</span>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
+                                            viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                        <span class="mx-4 text-gray-700 dark:text-gray-300">Account Management</span>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
+                                            viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                        <span class="mx-4 text-gray-700 dark:text-gray-300">5 exclusive widgets</span>
+                                    </div>
+                                </div>
+                                <!-- CTA -->
+                                <button
+                                    class="w-full px-4 py-3 mt-10 font-bold tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600 text-xl">
+                                    Choose Standard
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Tab 3 -->
+                        <div
+                            class="relative col-span-full md:col-span-4 bg-white shadow-md rounded-sm border border-gray-200">
+                            <div class="absolute top-0 left-0 right-0 h-0.5 bg-indigo-500" aria-hidden="true"></div>
+                            <div class="px-5 pt-5 pb-6 border-b border-gray-200">
+                                <header class="flex items-center justify-center mb-2">
+                                    <div
+                                        class="w-6 h-6 rounded-full flex-shrink-0 bg-gradient-to-tr from-indigo-500 to-indigo-300 mr-3">
+                                        <svg class="w-6 h-6 fill-current text-white" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 17a.833.833 0 01-.833-.833 3.333 3.333 0 00-3.334-3.334.833.833 0 110-1.666 3.333 3.333 0 003.334-3.334.833.833 0 111.666 0 3.333 3.333 0 003.334 3.334.833.833 0 110 1.666 3.333 3.333 0 00-3.334 3.334c0 .46-.373.833-.833.833z" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-5xl text-gray-800 font-bold">Plus</h3>
+                                </header>
+                                <div class="text-lg my-5 text-center">Ideal for individuals that need a custom solution
+                                    with
+                                    custom
+                                    tools.</div>
+                                <!-- Price -->
+                                <div class="text-gray-800 font-bold mb-4 text-center">
+                                    <span class="text-2xl">$</span><span class="text-6xl"
+                                        x-text="annual ? '74' : '79'">74</span><span
+                                        class="text-gray-500 font-medium text-sm">/mo</span>
+                                </div>
+                                <!-- CTA -->
+                            </div>
+                            <div class="px-10 pt-4 pb-5 mb-10">
+                                <!-- List -->
+
+                                <div class="mt-8 space-y-8 text-lg">
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
+                                            viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                        <span class="mx-4 text-gray-700 dark:text-gray-300">Unlimited Domains</span>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
+                                            viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                        <span class="mx-4 text-gray-700 dark:text-gray-300">WP Toolkit</span>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
+                                            viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                        <span class="mx-4 text-gray-700 dark:text-gray-300">Subscription
+                                            Management</span>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
+                                            viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                        <span class="mx-4 text-gray-700 dark:text-gray-300">Account Management</span>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
+                                            viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                        <span class="mx-4 text-gray-700 dark:text-gray-300">All Feature Access</span>
+                                    </div>
+                                </div>
+                                <!-- CTA -->
+                                <button
+                                    class="w-full px-4 py-3 mt-10 font-bold tracking-wide text-blue-600 capitalize transition-colors duration-300 transform bg-white border border-blue-600  rounded-md hover:bg-blue-600 hover:text-white focus:outline-none focus:bg-blue-600 text-xl">
+                                    Choose Plus
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto py-24">
+            <div class="text-7xl font-bold text-indigo-900 text-center my-5">
+                Frequently Asked Questions
+            </div>
+            <div class="max-w-full mx-auto p-8">
+
+                <div id="accordion-collapse" data-accordion="collapse">
+                    <h2 id="accordion-collapse-heading-1">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                            data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                            aria-controls="accordion-collapse-body-1">
+                            <span>What is a Web Hosting Control Panel?</span>
+                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                        <div
+                            class="p-5 text-lg font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">An open source web hosting control panel
+                                lets you easily manage the hosting service package. It provides an interface and a suite
+                                of tools to manage your server.
+                            </p>
+                            <p class="text-gray-500 dark:text-gray-400">You can use a control panel to manage multiple
+                                applications. Configure domains, email accounts, Databases, and Cron jobs. Upload and
+                                manage website files using file manager.</p>
+                            <p class="text-gray-500 dark:text-gray-400">Control Panel runs on multiple operating systems
+                                such as Debian, Ubuntu, and CentOS web panel.
+                            </p>
+                        </div>
+                    </div>
+                    <h2 id="accordion-collapse-heading-2">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                            data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+                            aria-controls="accordion-collapse-body-2">
+                            <span>What is CloudPanel?</span>
+                            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                        <div class="p-5 text-lg font-light border border-b-0 border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">CloudPanel is a free web hosting control
+                                panel with advanced features for server management. It offers a fast technology stack
+                                built with lightweight components for maximum performance.</p>
+                            <p class="text-gray-500 dark:text-gray-400">The control panel provides a suite of tools to
+                                strengthen security at the server level.</p>
+                        </div>
+                    </div>
+                    <h2 id="accordion-collapse-heading-3">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                            data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+                            aria-controls="accordion-collapse-body-3">
+                            <span>What are the minimum system requirements of CloudPanel?</span>
+                            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                        <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400"><span class="font-bold">Operating Systems
+                                    :</span><br>
+                                Debian 11 (x86 & ARM64)<br>
+                                Ubuntu 22.04 LTS (x86 & ARM64)<br>
+                                <br>
+                                <span class="font-bold">Cores :</span><br>
+                                Minimum 1 Core<br>
+                                Minimum 2 GB of Memory<br>
+                                Minimum 10 GB Disk Space<br>
+                            </p>
+
+                        </div>
+                    </div>
+                    <h2 id="accordion-collapse-heading-4">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                            data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
+                            aria-controls="accordion-collapse-body-3">
+                            <span>Who is CloudPanel for?</span>
+                            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
+                        <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                            <ul>
+                                <li>IT Admins</li>
+                                <li>Developers</li>
+                                <li>Web Hosting Users</li>
+                                <li>Digital Agencies</li>
+                                <li>Infrastructure Providers</li>
+                                <li>Server, Website & Application Managers</li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <footer class="w-full bg-gray-200 pt-32 pb-12 mx-auto">
+            <div class="container mx-auto flex flex-row justify-between text-gray-800 mb-12">
+                <div>
+                    <div class="text-xl font-bold mb-5">Company</div>
+                    <ul class="flex flex-col space-y-4 text-lg">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Customers</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Referral Program</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Trust Platform</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="text-xl font-bold mb-5">Products</div>
+                    <ul class="flex flex-col space-y-4 text-lg">
+                        <li><a href="#">Products Overview</a></li>
+                        <li><a href="#">Droplets</a></li>
+                        <li><a href="#">Kubernetes</a></li>
+                        <li><a href="#">Managed Databases</a></li>
+                        <li><a href="#">Spaces</a></li>
+                        <li><a href="#">Marketplace</a></li>
+                        <li><a href="#">Load Balancers</a></li>
+                        <li><a href="#">Block Storage</a></li>
+                        <li><a href="#">Tools & Integrations</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Release Notes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="text-xl font-bold mb-5">Community</div>
+                    <ul class="flex flex-col space-y-4 text-lg">
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Meetups</a></li>
+                        <li><a href="#">Q&A</a></li>
+                        <li><a href="#">Droplets for Demos</a></li>
+                        <li><a href="#">Hatch Startup Program</a></li>
+                        <li><a href="#">Shop Swag</a></li>
+                        <li><a href="#">Referral Program</a></li>
+                        <li><a href="#">Open Source </a></li>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Trust Platform</a></li>
+                        <li><a href="#">Newsletter Signup</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="text-xl font-bold mb-5">Solutions</div>
+                    <ul class="flex flex-col space-y-4 text-lg">
+                        <li><a href="#">Web & Mobile Apps</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Customers</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Referral Program</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Trust Platform</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="text-xl font-bold mb-5">Contact</div>
+                    <ul class="flex flex-col space-y-4 text-lg">
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Sales</a></li>
+                        <li><a href="#">Report Abuse</a></li>
+                        <li><a href="#">System Status</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="container mx-auto border-t border-gray-600 flex flex-row justify-between py-4">
+                <div>© 2023 MasterHost. All rights reserved.</div>
+                <ul class="flex flex-row space-x-4">
+                    <li><a class="bg-gray-400 text-gray-900 w-8 h-8 p-2 hover:text-white" href="#"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li><a class="bg-gray-400 text-gray-900 w-8 h-8 p-2 hover:text-white" href="#"><i
+                                class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li><a class="bg-gray-400 text-gray-900 w-8 h-8 p-2 hover:text-white" href="#">
+                            <i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li><a class="bg-gray-400 text-gray-900 w-8 h-8 p-2 hover:text-white" href="#"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li><a class="bg-gray-400 text-gray-900 w-8 h-8 p-2 hover:text-white" href="#"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
+        <script src="js/main.js"></script>
+        <script src="../node_modules/flowbite/dist/flowbite.js"></script>
+
+    </main>
+
+
+</body>
+
+</html>
