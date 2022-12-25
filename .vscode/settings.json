@@ -2,5 +2,5 @@
     "css.validate": false,
     "tailwindCSS.emmetCompletions": true,
     "nuxt.isNuxtApp": false,
-    "liveServer.settings.port": 5558
+    "liveServer.settings.port": 5560
 }

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 
@@ -34,8 +34,8 @@
                     class="py-4 border-b border-slate-900/10 lg:px-8 lg:border-0 dark:border-slate-300/10 mx-4 lg:mx-0">
                     <div class="relative flex items-center"><a
                             class="mr-3 flex items-center  w-[2.0625rem] overflow-hidden md:w-auto" href="/"><img
-                                class="h-8 w-auto sm:h-10" src="../images/logo-icon.svg" alt="">
-                            <img class="ml-2 h-4 w-auto sm:h-6" src="../images/logo-text.svg" alt=""></a>
+                                class="h-8 w-auto sm:h-10" src="../../images/logo-icon.svg" alt="">
+                            <img class="ml-2 h-4 w-auto sm:h-6" src="../../images/logo-text.svg" alt=""></a>
                         <div class="relative" data-headlessui-state=""><button
                                 class="text-xs leading-5 font-semibold bg-slate-400/10 rounded-full py-1 px-3 flex items-center space-x-2 hover:bg-slate-400/20 dark:highlight-white/5"
                                 id="headlessui-menu-button-1" type="button" aria-haspopup="true" aria-expanded="false"
@@ -246,7 +246,7 @@
                                     Started</h5>
                                 <ul class="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800">
                                     <li data-active="true"><a
-                                            class="block border-l pl-4 -ml-px text-sky-500 border-current font-semibold  hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300"
+                                            class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300"
                                             href="/docs/installation">Installation</a></li>
                                     <li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300"
                                             href="/docs/editor-setup">Editor Setup</a></li>
@@ -265,7 +265,7 @@
                                 </h5>
                                 <ul class="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800">
                                     <li data-active="true"><a
-                                            class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300"
+                                            class="block border-l pl-4 -ml-px text-sky-500 border-current font-semibold hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300"
                                             href="/docs/installation">Add Site</a></li>
                                     <li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300"
                                             href="/docs/editor-setup">Account</a></li>
@@ -398,26 +398,207 @@
                         <header id="header" class="mb-10 md:flex md:items-start">
                             <div class="flex-auto max-w-4xl">
                                 <p class="mb-4 text-sm leading-6 font-semibold text-sky-500 dark:text-sky-400">
-                                    Installation</p>
+                                    Frontend Area</p>
                                 <h1
-                                    class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight dark:text-slate-200">
-                                    MasterHost Installation guide</h1>
-                                <p class="mt-4 text-lg text-slate-700 dark:text-slate-400"> On this page, we explain
-                                    step by step how to
-                                    install <span class="font-bold">CloudPanel</span> on a dedicated server or any other
-                                    cloud.
-
-
+                                    class="text-3xl border-b border-gray-200 pb-5 mb-8 sm:text-4xl font-extrabold text-slate-900 tracking-tight dark:text-slate-200">
+                                    Add Site</h1>
+                                <p>With <strong>CloudPanel</strong>, you can <a class="text-blue-500"
+                                        href="#create-a-wordpress-site">Create a
+                                        WordPress Site</a>, <a class="text-blue-500" href="#create-a-php-site">Create a
+                                        PHP Site</a>,
+                                    <a class="text-blue-500" href="#create-a-nodejs-site">Create a Node.js Site</a>, <a
+                                        class="text-blue-500" href="#create-a-static-html-site">Create a Static HTML
+                                        Site</a> or <a class="text-blue-500" href="#create-a-python-site">Create a
+                                        Python Site</a><a class="text-blue-500" href="#create-a-golang-site">Create a
+                                        Golang Site</a>.
                                 </p>
-                                <p class="mt-4 text-lg text-slate-700 dark:text-slate-400">For the installation, you
-                                    need an empty server with Ubuntu 22.04 or Debian 11 with root access.</p>
                             </div>
                         </header>
                         <section class="mb-16 relative">
                             <div class="relative z-10">
-                                <h2 data-docsearch-ignore="true"
-                                    class="text-slate-900 text-xl tracking-tight font-bold mb-3 dark:text-slate-200">
-                                    Install CloudPanel</h2>
+
+
+                                <img class="w-full my-5" src="../../images/dummy/add-site.png" alt="">
+                                <div>
+                                    <h1
+                                        class="text-3xl mb-5 sm:text-4xl border-b border-gray-200 pb-5 font-extrabold text-slate-900 tracking-tight dark:text-slate-200">
+                                        Create a WordPress Site</h1>
+
+                                    <ol class="relative space-y-2 mb-16" style="counter-reset: step 0;">
+                                        <li class="relative pl-10 xl:grid grid-cols-5 gap-16 before:content-[counter(step)] before:absolute before:left-0 before:flex before:items-center before:justify-center before:w-[calc(1.375rem+1px)] before:h-[calc(1.375rem+1px)] before:text-[0.625rem] before:font-bold before:text-slate-700 before:rounded-md before:shadow-sm before:ring-1 before:ring-slate-900/5 dark:before:bg-slate-700 dark:before:text-slate-200 dark:before:ring-0 dark:before:shadow-none dark:before:highlight-white/5 pb-8 after:absolute after:top-[calc(1.875rem+1px)] after:bottom-0 after:left-[0.6875rem] after:w-px after:bg-slate-200 dark:after:bg-slate-200/5"
+                                            style="counter-increment: step 1;">
+                                            <div class="mb-6 col-span-2 xl:mb-0">
+                                                <h4
+                                                    class="text-sm leading-6 text-slate-900 font-semibold mb-2 dark:text-slate-200">
+                                                    Fill out all fields and click on <strong>Create</strong> to
+                                                    <strong>Create a WordPress Site.</strong>
+                                                </h4>
+
+                                            </div>
+                                            <div
+                                                class="relative z-10 -ml-10 col-span-3 bg-slate-800 rounded-xl shadow-lg xl:ml-0 dark:shadow-none dark:ring-1 dark:ring-inset dark:ring-white/10">
+                                                <img src="../../images/dummy/create-a-wordpress-site.png" alt="">
+                                            </div>
+                                        </li>
+
+                                        <li class="relative pl-10 xl:grid grid-cols-5 gap-16 before:content-[counter(step)] before:absolute before:left-0 before:flex before:items-center before:justify-center before:w-[calc(1.375rem+1px)] before:h-[calc(1.375rem+1px)] before:text-[0.625rem] before:font-bold before:text-slate-700 before:rounded-md before:shadow-sm before:ring-1 before:ring-slate-900/5 dark:before:bg-slate-700 dark:before:text-slate-200 dark:before:ring-0 dark:before:shadow-none dark:before:highlight-white/5 pb-8 after:absolute after:top-[calc(1.875rem+1px)] after:bottom-0 after:left-[0.6875rem] after:w-px after:bg-slate-200 dark:after:bg-slate-200/5"
+                                            style="counter-increment: step 1;">
+                                            <div class="mb-6 col-span-2 xl:mb-0">
+                                                <h4
+                                                    class="text-sm leading-6 text-slate-900 font-semibold mb-2 dark:text-slate-200">
+                                                    Copy the credentials for your created WordPress site in a secure
+                                                    place.
+                                                </h4>
+
+                                                <div class="w-full bg-red-50 border-l-4 border-red-500 p-5">
+                                                    <p class="text-red-500 font-bold text-lg">SITE USER</p>
+                                                    <p>The Site User is an <strong> SSH User</strong>. All files will be
+                                                        stored in his home
+                                                        directory:<strong>/home/$siteUser</strong>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                            <div
+                                                class="relative z-10 -ml-10 col-span-3 bg-slate-800 rounded-xl shadow-lg xl:ml-0 dark:shadow-none dark:ring-1 dark:ring-inset dark:ring-white/10">
+                                                <img src="../../images/dummy/wordpress-site-credentials.png" alt="">
+                                            </div>
+                                        </li>
+
+
+                                    </ol>
+                                </div>
+
+                                <div>
+                                    <h1
+                                        class="text-3xl mb-5 sm:text-4xl border-b border-gray-200 pb-5 font-extrabold text-slate-900 tracking-tight dark:text-slate-200">
+                                        Create a PHP Site</h1>
+
+                                    <div class="w-full bg-green-50 border-l-4 border-green-500 p-5 my-5">
+                                        <p class="text-green-500 font-bold text-lg">BEST PRACTICES - PHP SITE MIGRATION
+                                        </p>
+                                        <p>Before you start, please read the best practices for migrating PHP Sites.
+                                        </p>
+                                    </div>
+                                    <ol class="relative space-y-2 mb-16" style="counter-reset: step 0;">
+                                        <li class="relative pl-10 xl:grid grid-cols-5 gap-16 before:content-[counter(step)] before:absolute before:left-0 before:flex before:items-center before:justify-center before:w-[calc(1.375rem+1px)] before:h-[calc(1.375rem+1px)] before:text-[0.625rem] before:font-bold before:text-slate-700 before:rounded-md before:shadow-sm before:ring-1 before:ring-slate-900/5 dark:before:bg-slate-700 dark:before:text-slate-200 dark:before:ring-0 dark:before:shadow-none dark:before:highlight-white/5 pb-8 after:absolute after:top-[calc(1.875rem+1px)] after:bottom-0 after:left-[0.6875rem] after:w-px after:bg-slate-200 dark:after:bg-slate-200/5"
+                                            style="counter-increment: step 1;">
+                                            <div class="mb-6 col-span-2 xl:mb-0">
+                                                <h4
+                                                    class="text-sm leading-6 text-slate-900 font-semibold mb-2 dark:text-slate-200">
+                                                    Select the <strong>Application</strong>, the <strong> Domain
+                                                        Name</strong>, and the <strong> PHP Version</strong>. The
+                                                    <strong> PHP Version</strong> can be changed later if needed.
+                                                </h4>
+
+                                                <div class="w-full bg-orange-50 border-l-4 border-orange-500 p-5">
+                                                    <p class="text-orange-500 font-bold text-lg">REDIRECTION</p>
+                                                    <p>When you enter the <strong>Domain Name </strong> with
+                                                        <strong>www</strong>, a redirection from non-www to www will be
+                                                        created automatically and vice versa. All <strong> HTTP</strong>
+                                                        requests are redirected to <strong>HTTPS</strong> by default.
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                            <div
+                                                class="relative z-10 -ml-10 col-span-3 bg-slate-800 rounded-xl shadow-lg xl:ml-0 dark:shadow-none dark:ring-1 dark:ring-inset dark:ring-white/10">
+                                                <img src="../../images/dummy/create-php-site.png" alt="">
+                                            </div>
+                                        </li>
+
+                                        <li class="relative pl-10 xl:grid grid-cols-5 gap-16 before:content-[counter(step)] before:absolute before:left-0 before:flex before:items-center before:justify-center before:w-[calc(1.375rem+1px)] before:h-[calc(1.375rem+1px)] before:text-[0.625rem] before:font-bold before:text-slate-700 before:rounded-md before:shadow-sm before:ring-1 before:ring-slate-900/5 dark:before:bg-slate-700 dark:before:text-slate-200 dark:before:ring-0 dark:before:shadow-none dark:before:highlight-white/5 pb-8 after:absolute after:top-[calc(1.875rem+1px)] after:bottom-0 after:left-[0.6875rem] after:w-px after:bg-slate-200 dark:after:bg-slate-200/5"
+                                            style="counter-increment: step 1;">
+                                            <div class="mb-6 col-span-2 xl:mb-0">
+                                                <h4
+                                                    class="text-sm leading-6 text-slate-900 font-semibold mb-2 dark:text-slate-200">
+                                                    Click on Create to <strong>create</strong> the <strong> PHP</strong>
+                                                    Site.
+                                                </h4>
+                                            </div>
+
+                                        </li>
+                                        <li class="relative pl-10 xl:grid grid-cols-5 gap-16 before:content-[counter(step)] before:absolute before:left-0 before:flex before:items-center before:justify-center before:w-[calc(1.375rem+1px)] before:h-[calc(1.375rem+1px)] before:text-[0.625rem] before:font-bold before:text-slate-700 before:rounded-md before:shadow-sm before:ring-1 before:ring-slate-900/5 dark:before:bg-slate-700 dark:before:text-slate-200 dark:before:ring-0 dark:before:shadow-none dark:before:highlight-white/5 pb-8 after:absolute after:top-[calc(1.875rem+1px)] after:bottom-0 after:left-[0.6875rem] after:w-px after:bg-slate-200 dark:after:bg-slate-200/5"
+                                            style="counter-increment: step 1;">
+                                            <div class="mb-6 col-span-2 xl:mb-0">
+                                                <h4
+                                                    class="text-sm leading-6 text-slate-900 font-semibold mb-2 dark:text-slate-200">
+                                                    You can now use the <strong> Site User</strong> to log in via
+                                                    <strong> SSH</strong> to upload the
+                                                    application files.
+                                                </h4>
+                                            </div>
+
+                                        </li>
+
+
+                                    </ol>
+                                </div>
+
+                                <div>
+                                    <h1
+                                        class="text-3xl mb-5 sm:text-4xl border-b border-gray-200 pb-5 font-extrabold text-slate-900 tracking-tight dark:text-slate-200">
+                                        Create a Node.js Site</h1>
+
+                                    <div class="w-full bg-green-50 border-l-4 border-green-500 p-5 my-5">
+                                        <p class="text-green-500 font-bold text-lg">BEST PRACTICES - PHP SITE MIGRATION
+                                        </p>
+                                        <p>Before you start, please read the best practices for migrating PHP Sites.
+                                        </p>
+                                    </div>
+                                    <ol class="relative space-y-2 mb-16" style="counter-reset: step 0;">
+                                        <li class="relative pl-10 xl:grid grid-cols-5 gap-16 before:content-[counter(step)] before:absolute before:left-0 before:flex before:items-center before:justify-center before:w-[calc(1.375rem+1px)] before:h-[calc(1.375rem+1px)] before:text-[0.625rem] before:font-bold before:text-slate-700 before:rounded-md before:shadow-sm before:ring-1 before:ring-slate-900/5 dark:before:bg-slate-700 dark:before:text-slate-200 dark:before:ring-0 dark:before:shadow-none dark:before:highlight-white/5 pb-8 after:absolute after:top-[calc(1.875rem+1px)] after:bottom-0 after:left-[0.6875rem] after:w-px after:bg-slate-200 dark:after:bg-slate-200/5"
+                                            style="counter-increment: step 1;">
+                                            <div class="mb-6 col-span-2 xl:mb-0">
+                                                <h4
+                                                    class="text-sm leading-6 text-slate-900 font-semibold mb-2 dark:text-slate-200">
+                                                    Enter the <strong>Domain Name </strong>, select the <strong> Node.js
+                                                        Version </strong>, and the <strong>App Port</strong> .
+                                                </h4>
+
+                                                <div class="w-full bg-orange-50 border-l-4 border-orange-500 p-5">
+                                                    <p class="text-orange-500 font-bold text-lg">REDIRECTION</p>
+                                                    <p class="text-normal">When you enter the Domain Name with www, a
+                                                        redirection from
+                                                        non-www to www will be created automatically and vice versa. All
+                                                        HTTP requests are redirected to HTTPS by default.</p>
+                                                </div>
+
+                                            </div>
+                                            <div
+                                                class="relative z-10 -ml-10 col-span-3 bg-slate-800 rounded-xl shadow-lg xl:ml-0 dark:shadow-none dark:ring-1 dark:ring-inset dark:ring-white/10">
+                                                <img src="../../images/dummy/create-nodejs-site.png" alt="">
+                                            </div>
+                                        </li>
+
+                                        <li class="relative pl-10 xl:grid grid-cols-5 gap-16 before:content-[counter(step)] before:absolute before:left-0 before:flex before:items-center before:justify-center before:w-[calc(1.375rem+1px)] before:h-[calc(1.375rem+1px)] before:text-[0.625rem] before:font-bold before:text-slate-700 before:rounded-md before:shadow-sm before:ring-1 before:ring-slate-900/5 dark:before:bg-slate-700 dark:before:text-slate-200 dark:before:ring-0 dark:before:shadow-none dark:before:highlight-white/5 pb-8 after:absolute after:top-[calc(1.875rem+1px)] after:bottom-0 after:left-[0.6875rem] after:w-px after:bg-slate-200 dark:after:bg-slate-200/5"
+                                            style="counter-increment: step 1;">
+                                            <div class="mb-6 col-span-2 xl:mb-0">
+                                                <h4
+                                                    class="text-sm leading-6 text-slate-900 font-semibold mb-2 dark:text-slate-200">
+                                                    Click on Create to <strong>create</strong> the <strong> PHP</strong>
+                                                    Site.
+                                                </h4>
+                                            </div>
+
+                                        </li>
+                                        <li class="relative pl-10 xl:grid grid-cols-5 gap-16 before:content-[counter(step)] before:absolute before:left-0 before:flex before:items-center before:justify-center before:w-[calc(1.375rem+1px)] before:h-[calc(1.375rem+1px)] before:text-[0.625rem] before:font-bold before:text-slate-700 before:rounded-md before:shadow-sm before:ring-1 before:ring-slate-900/5 dark:before:bg-slate-700 dark:before:text-slate-200 dark:before:ring-0 dark:before:shadow-none dark:before:highlight-white/5 pb-8 after:absolute after:top-[calc(1.875rem+1px)] after:bottom-0 after:left-[0.6875rem] after:w-px after:bg-slate-200 dark:after:bg-slate-200/5"
+                                            style="counter-increment: step 1;">
+                                            <div class="mb-6 col-span-2 xl:mb-0">
+                                                <h4
+                                                    class="text-sm leading-6 text-slate-900 font-semibold mb-2 dark:text-slate-200">
+                                                    You can now use the <strong> Site User</strong> to log in via
+                                                    <strong> SSH to upload the
+                                                        application files.
+                                                </h4>
+                                            </div>
+
+                                        </li>
+
+
+                                    </ol>
+                                </div>
+
 
                                 <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
                                     <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab"
@@ -738,468 +919,10 @@
                                     </div>
                                 </div>
 
-                                <!-- <div class="flex overflow-auto mb-6 -mx-4 sm:-mx-6">
-                                    <div class="flex-none min-w-full px-4 sm:px-6">
-                                        <ul
-                                            class="border-b border-slate-200 space-x-6 flex whitespace-nowrap dark:border-slate-200/5">
-                                            <li>
-                                                <h2><a class="flex text-sm leading-6 font-semibold pt-3 pb-2.5 border-b-2 -mb-px text-sky-500 border-current"
-                                                        href="/docs/installation">Tailwind CLI</a></h2>
-                                            </li>
-                                            <li>
-                                                <h2><a class="flex text-sm leading-6 font-semibold pt-3 pb-2.5 border-b-2 -mb-px text-slate-900 border-transparent hover:border-slate-300 dark:text-slate-200 dark:hover:border-slate-700"
-                                                        href="/docs/installation/using-postcss">Using PostCSS</a></h2>
-                                            </li>
-                                            <li>
-                                                <h2><a class="flex text-sm leading-6 font-semibold pt-3 pb-2.5 border-b-2 -mb-px text-slate-900 border-transparent hover:border-slate-300 dark:text-slate-200 dark:hover:border-slate-700"
-                                                        href="/docs/installation/framework-guides">Framework Guides</a>
-                                                </h2>
-                                            </li>
-                                            <li>
-                                                <h2><a class="flex text-sm leading-6 font-semibold pt-3 pb-2.5 border-b-2 -mb-px text-slate-900 border-transparent hover:border-slate-300 dark:text-slate-200 dark:hover:border-slate-700"
-                                                        href="/docs/installation/play-cdn">Play CDN</a></h2>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div> -->
+
                             </div>
-                            <!-- <div id="content-wrapper"
-                                class="relative z-10 max-w-3xl mb-16 prose prose-slate dark:prose-dark">
-                                <h3 class="sr-only">Installing Tailwind CLI</h3>
-                                <p>The simplest and fastest way to get up and running with Tailwind CSS from scratch is
-                                    with the Tailwind CLI tool. The CLI is also available as a <a
-                                        href="/blog/standalone-cli">standalone executable</a> if you want to use
-                                    it without installing Node.js.</p>
-                            </div>
-                            <div
-                                class="hidden sm:block absolute -z-10 top-0 left-[15%] pt-[40%] 2xl:left-[40%] 2xl:pt-[8%] dark:hidden">
-                                <img src="/_next/static/media/installation.50c59fdd.jpg" alt=""
-                                    class="w-[52.6875rem] max-w-none" decoding="async">
-                            </div>
-                            <ol class="relative space-y-2 mb-16" style="counter-reset:step">
-                                <li class="relative pl-10 xl:grid grid-cols-5 gap-16 before:content-[counter(step)] before:absolute before:left-0 before:flex before:items-center before:justify-center before:w-[calc(1.375rem+1px)] before:h-[calc(1.375rem+1px)] before:text-[0.625rem] before:font-bold before:text-slate-700 before:rounded-md before:shadow-sm before:ring-1 before:ring-slate-900/5 dark:before:bg-slate-700 dark:before:text-slate-200 dark:before:ring-0 dark:before:shadow-none dark:before:highlight-white/5 pb-8 after:absolute after:top-[calc(1.875rem+1px)] after:bottom-0 after:left-[0.6875rem] after:w-px after:bg-slate-200 dark:after:bg-slate-200/5"
-                                    style="counter-increment:step">
-                                    <div class="mb-6 col-span-2 xl:mb-0">
-                                        <h4
-                                            class="text-sm leading-6 text-slate-900 font-semibold mb-2 dark:text-slate-200">
-                                            Install Tailwind CSS</h4>
-                                        <div class="prose prose-slate prose-sm dark:prose-dark">
-                                            <p>Install <code>tailwindcss</code> via npm, and create your
-                                                <code>tailwind.config.js</code> file.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="relative z-10 -ml-10 col-span-3 bg-slate-800 rounded-xl shadow-lg xl:ml-0 dark:shadow-none dark:ring-1 dark:ring-inset dark:ring-white/10">
-                                        <div class="relative flex text-slate-400 text-xs leading-6">
-                                            <div
-                                                class="mt-2 flex-none text-sky-300 border-t border-b border-t-transparent border-b-sky-300 px-4 py-1 flex items-center">
-                                                Terminal</div>
-                                            <div class="flex-auto flex pt-2 rounded-tr-xl overflow-hidden">
-                                                <div
-                                                    class="flex-auto -mr-px bg-slate-700/50 border border-slate-500/30 rounded-tl">
-                                                </div>
-                                            </div>
-                                            <div class="absolute top-2 right-0 h-8 flex items-center pr-4">
-                                                <div class="relative flex -mr-2"><button type="button"
-                                                        class="text-slate-500 hover:text-slate-400"><svg fill="none"
-                                                            stroke="currentColor" stroke-width="1.5"
-                                                            stroke-linecap="round" stroke-linejoin="round"
-                                                            aria-hidden="true" class="w-8 h-8">
-                                                            <path
-                                                                d="M13 10.75h-1.25a2 2 0 0 0-2 2v8.5a2 2 0 0 0 2 2h8.5a2 2 0 0 0 2-2v-8.5a2 2 0 0 0-2-2H19">
-                                                            </path>
-                                                            <path
-                                                                d="M18 12.25h-4a1 1 0 0 1-1-1v-1.5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1.5a1 1 0 0 1-1 1ZM13.75 16.25h4.5M13.75 19.25h4.5">
-                                                            </path>
-                                                        </svg></button></div>
-                                            </div>
-                                        </div>
-                                        <div class="relative">
-                                            <pre
-                                                class="text-sm leading-6 text-slate-50 flex ligatures-none overflow-auto"><code class="flex-none min-w-full p-5"><span class="flex"><svg viewBox="0 -9 3 24" aria-hidden="true" class="flex-none overflow-visible text-pink-400 w-auto h-6 mr-3"><path d="M0 0L3 3L0 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="flex-auto">npm install -D tailwindcss</span></span><span class="flex"><svg viewBox="0 -9 3 24" aria-hidden="true" class="flex-none overflow-visible text-pink-400 w-auto h-6 mr-3"><path d="M0 0L3 3L0 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="flex-auto">npx tailwindcss init</span></span></code></pre>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="relative pl-10 xl:grid grid-cols-5 gap-16 before:content-[counter(step)] before:absolute before:left-0 before:flex before:items-center before:justify-center before:w-[calc(1.375rem+1px)] before:h-[calc(1.375rem+1px)] before:text-[0.625rem] before:font-bold before:text-slate-700 before:rounded-md before:shadow-sm before:ring-1 before:ring-slate-900/5 dark:before:bg-slate-700 dark:before:text-slate-200 dark:before:ring-0 dark:before:shadow-none dark:before:highlight-white/5 pb-8 after:absolute after:top-[calc(1.875rem+1px)] after:bottom-0 after:left-[0.6875rem] after:w-px after:bg-slate-200 dark:after:bg-slate-200/5"
-                                    style="counter-increment:step">
-                                    <div class="mb-6 col-span-2 xl:mb-0">
-                                        <h4
-                                            class="text-sm leading-6 text-slate-900 font-semibold mb-2 dark:text-slate-200">
-                                            Configure your template paths</h4>
-                                        <div class="prose prose-slate prose-sm dark:prose-dark">
-                                            <p>Add the paths to all of your template files in your
-                                                <code>tailwind.config.js</code> file.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="relative z-10 -ml-10 col-span-3 bg-slate-800 rounded-xl shadow-lg xl:ml-0 dark:shadow-none dark:ring-1 dark:ring-inset dark:ring-white/10">
-                                        <div class="relative flex text-slate-400 text-xs leading-6">
-                                            <div
-                                                class="mt-2 flex-none text-sky-300 border-t border-b border-t-transparent border-b-sky-300 px-4 py-1 flex items-center">
-                                                tailwind.config.js</div>
-                                            <div class="flex-auto flex pt-2 rounded-tr-xl overflow-hidden">
-                                                <div
-                                                    class="flex-auto -mr-px bg-slate-700/50 border border-slate-500/30 rounded-tl">
-                                                </div>
-                                            </div>
-                                            <div class="absolute top-2 right-0 h-8 flex items-center pr-4">
-                                                <div class="relative flex -mr-2"><button type="button"
-                                                        class="text-slate-500 hover:text-slate-400"><svg fill="none"
-                                                            stroke="currentColor" stroke-width="1.5"
-                                                            stroke-linecap="round" stroke-linejoin="round"
-                                                            aria-hidden="true" class="w-8 h-8">
-                                                            <path
-                                                                d="M13 10.75h-1.25a2 2 0 0 0-2 2v8.5a2 2 0 0 0 2 2h8.5a2 2 0 0 0 2-2v-8.5a2 2 0 0 0-2-2H19">
-                                                            </path>
-                                                            <path
-                                                                d="M18 12.25h-4a1 1 0 0 1-1-1v-1.5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1.5a1 1 0 0 1-1 1ZM13.75 16.25h4.5M13.75 19.25h4.5">
-                                                            </path>
-                                                        </svg></button></div>
-                                            </div>
-                                        </div>
-                                        <div class="relative">
-                                            <pre
-                                                class="text-sm leading-6 text-slate-50 flex ligatures-none overflow-auto"><code class="flex-none min-w-full p-5"><span class="token block"><span class="token doc-comment comment">/** </span><span class="token doc-comment comment keyword">@type</span><span class="token doc-comment comment"> </span><span class="token doc-comment comment class-name punctuation">{</span><span class="token doc-comment comment class-name keyword">import</span><span class="token doc-comment comment class-name punctuation">(</span><span class="token doc-comment comment class-name string">'tailwindcss'</span><span class="token doc-comment comment class-name punctuation">)</span><span class="token doc-comment comment class-name punctuation">.</span><span class="token doc-comment comment class-name">Config</span><span class="token doc-comment comment class-name punctuation">}</span><span class="token doc-comment comment"> */</span><span class="token plain"></span>
-</span><span class="token block"><span class="token plain">module</span><span class="token punctuation">.</span><span class="token property-access">exports</span><span class="token plain"> </span><span class="token operator">=</span><span class="token plain"> </span><span class="token punctuation">{</span><span class="token plain"></span>
-</span><span class="token block -mx-5 pl-4 pr-5 border-l-4 border-sky-400 bg-sky-300/[0.15]"><span class="token plain">  </span><span class="token literal-property property">content</span><span class="token operator">:</span><span class="token plain"> </span><span class="token punctuation">[</span><span class="token string">"./src/**/*.{html,js}"</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token plain"></span>
-</span><span class="token block"><span class="token plain">  </span><span class="token literal-property property">theme</span><span class="token operator">:</span><span class="token plain"> </span><span class="token punctuation">{</span><span class="token plain"></span>
-</span><span class="token block"><span class="token plain">    </span><span class="token literal-property property">extend</span><span class="token operator">:</span><span class="token plain"> </span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token plain"></span>
-</span><span class="token block"><span class="token plain">  </span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token plain"></span>
-</span><span class="token block"><span class="token plain">  </span><span class="token literal-property property">plugins</span><span class="token operator">:</span><span class="token plain"> </span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token plain"></span>
-</span><span class="token block"><span class="token plain"></span><span class="token punctuation">}</span>
-</span></code></pre>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="relative pl-10 xl:grid grid-cols-5 gap-16 before:content-[counter(step)] before:absolute before:left-0 before:flex before:items-center before:justify-center before:w-[calc(1.375rem+1px)] before:h-[calc(1.375rem+1px)] before:text-[0.625rem] before:font-bold before:text-slate-700 before:rounded-md before:shadow-sm before:ring-1 before:ring-slate-900/5 dark:before:bg-slate-700 dark:before:text-slate-200 dark:before:ring-0 dark:before:shadow-none dark:before:highlight-white/5 pb-8 after:absolute after:top-[calc(1.875rem+1px)] after:bottom-0 after:left-[0.6875rem] after:w-px after:bg-slate-200 dark:after:bg-slate-200/5"
-                                    style="counter-increment:step">
-                                    <div class="mb-6 col-span-2 xl:mb-0">
-                                        <h4
-                                            class="text-sm leading-6 text-slate-900 font-semibold mb-2 dark:text-slate-200">
-                                            Add the Tailwind directives to your CSS</h4>
-                                        <div class="prose prose-slate prose-sm dark:prose-dark">
-                                            <p>Add the <code>@tailwind</code> directives for each of Tailwind’s layers
-                                                to your main CSS file.</p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="relative z-10 -ml-10 col-span-3 bg-slate-800 rounded-xl shadow-lg xl:ml-0 dark:shadow-none dark:ring-1 dark:ring-inset dark:ring-white/10">
-                                        <div class="relative flex text-slate-400 text-xs leading-6">
-                                            <div
-                                                class="mt-2 flex-none text-sky-300 border-t border-b border-t-transparent border-b-sky-300 px-4 py-1 flex items-center">
-                                                src/input.css</div>
-                                            <div class="flex-auto flex pt-2 rounded-tr-xl overflow-hidden">
-                                                <div
-                                                    class="flex-auto -mr-px bg-slate-700/50 border border-slate-500/30 rounded-tl">
-                                                </div>
-                                            </div>
-                                            <div class="absolute top-2 right-0 h-8 flex items-center pr-4">
-                                                <div class="relative flex -mr-2"><button type="button"
-                                                        class="text-slate-500 hover:text-slate-400"><svg fill="none"
-                                                            stroke="currentColor" stroke-width="1.5"
-                                                            stroke-linecap="round" stroke-linejoin="round"
-                                                            aria-hidden="true" class="w-8 h-8">
-                                                            <path
-                                                                d="M13 10.75h-1.25a2 2 0 0 0-2 2v8.5a2 2 0 0 0 2 2h8.5a2 2 0 0 0 2-2v-8.5a2 2 0 0 0-2-2H19">
-                                                            </path>
-                                                            <path
-                                                                d="M18 12.25h-4a1 1 0 0 1-1-1v-1.5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1.5a1 1 0 0 1-1 1ZM13.75 16.25h4.5M13.75 19.25h4.5">
-                                                            </path>
-                                                        </svg></button></div>
-                                            </div>
-                                        </div>
-                                        <div class="relative">
-                                            <pre
-                                                class="text-sm leading-6 text-slate-50 flex ligatures-none overflow-auto"><code class="flex-none min-w-full p-5"><span class="token atrule"><span class="token rule">@tailwind</span> base<span class="token punctuation">;</span></span>
-<span class="token atrule"><span class="token rule">@tailwind</span> components<span class="token punctuation">;</span></span>
-<span class="token atrule"><span class="token rule">@tailwind</span> utilities<span class="token punctuation">;</span></span></code></pre>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="relative pl-10 xl:grid grid-cols-5 gap-16 before:content-[counter(step)] before:absolute before:left-0 before:flex before:items-center before:justify-center before:w-[calc(1.375rem+1px)] before:h-[calc(1.375rem+1px)] before:text-[0.625rem] before:font-bold before:text-slate-700 before:rounded-md before:shadow-sm before:ring-1 before:ring-slate-900/5 dark:before:bg-slate-700 dark:before:text-slate-200 dark:before:ring-0 dark:before:shadow-none dark:before:highlight-white/5 pb-8 after:absolute after:top-[calc(1.875rem+1px)] after:bottom-0 after:left-[0.6875rem] after:w-px after:bg-slate-200 dark:after:bg-slate-200/5"
-                                    style="counter-increment:step">
-                                    <div class="mb-6 col-span-2 xl:mb-0">
-                                        <h4
-                                            class="text-sm leading-6 text-slate-900 font-semibold mb-2 dark:text-slate-200">
-                                            Start the Tailwind CLI build process</h4>
-                                        <div class="prose prose-slate prose-sm dark:prose-dark">
-                                            <p>Run the CLI tool to scan your template files for classes and build your
-                                                CSS.</p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="relative z-10 -ml-10 col-span-3 bg-slate-800 rounded-xl shadow-lg xl:ml-0 dark:shadow-none dark:ring-1 dark:ring-inset dark:ring-white/10">
-                                        <div class="relative flex text-slate-400 text-xs leading-6">
-                                            <div
-                                                class="mt-2 flex-none text-sky-300 border-t border-b border-t-transparent border-b-sky-300 px-4 py-1 flex items-center">
-                                                Terminal</div>
-                                            <div class="flex-auto flex pt-2 rounded-tr-xl overflow-hidden">
-                                                <div
-                                                    class="flex-auto -mr-px bg-slate-700/50 border border-slate-500/30 rounded-tl">
-                                                </div>
-                                            </div>
-                                            <div class="absolute top-2 right-0 h-8 flex items-center pr-4">
-                                                <div class="relative flex -mr-2"><button type="button"
-                                                        class="text-slate-500 hover:text-slate-400"><svg fill="none"
-                                                            stroke="currentColor" stroke-width="1.5"
-                                                            stroke-linecap="round" stroke-linejoin="round"
-                                                            aria-hidden="true" class="w-8 h-8">
-                                                            <path
-                                                                d="M13 10.75h-1.25a2 2 0 0 0-2 2v8.5a2 2 0 0 0 2 2h8.5a2 2 0 0 0 2-2v-8.5a2 2 0 0 0-2-2H19">
-                                                            </path>
-                                                            <path
-                                                                d="M18 12.25h-4a1 1 0 0 1-1-1v-1.5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1.5a1 1 0 0 1-1 1ZM13.75 16.25h4.5M13.75 19.25h4.5">
-                                                            </path>
-                                                        </svg></button></div>
-                                            </div>
-                                        </div>
-                                        <div class="relative">
-                                            <pre
-                                                class="text-sm leading-6 text-slate-50 flex ligatures-none overflow-auto"><code class="flex-none min-w-full p-5"><span class="flex"><svg viewBox="0 -9 3 24" aria-hidden="true" class="flex-none overflow-visible text-pink-400 w-auto h-6 mr-3"><path d="M0 0L3 3L0 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="flex-auto">npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch</span></span></code></pre>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="relative pl-10 xl:grid grid-cols-5 gap-16 before:content-[counter(step)] before:absolute before:left-0 before:flex before:items-center before:justify-center before:w-[calc(1.375rem+1px)] before:h-[calc(1.375rem+1px)] before:text-[0.625rem] before:font-bold before:text-slate-700 before:rounded-md before:shadow-sm before:ring-1 before:ring-slate-900/5 dark:before:bg-slate-700 dark:before:text-slate-200 dark:before:ring-0 dark:before:shadow-none dark:before:highlight-white/5"
-                                    style="counter-increment:step">
-                                    <div class="mb-6 col-span-2 xl:mb-0">
-                                        <h4
-                                            class="text-sm leading-6 text-slate-900 font-semibold mb-2 dark:text-slate-200">
-                                            Start using Tailwind in your HTML</h4>
-                                        <div class="prose prose-slate prose-sm dark:prose-dark">
-                                            <p>Add your compiled CSS file to the <code>&lt;head&gt;</code> and start
-                                                using Tailwind’s utility classes to style your content.</p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="relative z-10 -ml-10 col-span-3 bg-slate-800 rounded-xl shadow-lg xl:ml-0 dark:shadow-none dark:ring-1 dark:ring-inset dark:ring-white/10">
-                                        <div class="relative flex text-slate-400 text-xs leading-6">
-                                            <div
-                                                class="mt-2 flex-none text-sky-300 border-t border-b border-t-transparent border-b-sky-300 px-4 py-1 flex items-center">
-                                                src/index.html</div>
-                                            <div class="flex-auto flex pt-2 rounded-tr-xl overflow-hidden">
-                                                <div
-                                                    class="flex-auto -mr-px bg-slate-700/50 border border-slate-500/30 rounded-tl">
-                                                </div>
-                                            </div>
-                                            <div class="absolute top-2 right-0 h-8 flex items-center pr-4">
-                                                <div class="relative flex -mr-2"><button type="button"
-                                                        class="text-slate-500 hover:text-slate-400"><svg fill="none"
-                                                            stroke="currentColor" stroke-width="1.5"
-                                                            stroke-linecap="round" stroke-linejoin="round"
-                                                            aria-hidden="true" class="w-8 h-8">
-                                                            <path
-                                                                d="M13 10.75h-1.25a2 2 0 0 0-2 2v8.5a2 2 0 0 0 2 2h8.5a2 2 0 0 0 2-2v-8.5a2 2 0 0 0-2-2H19">
-                                                            </path>
-                                                            <path
-                                                                d="M18 12.25h-4a1 1 0 0 1-1-1v-1.5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1.5a1 1 0 0 1-1 1ZM13.75 16.25h4.5M13.75 19.25h4.5">
-                                                            </path>
-                                                        </svg></button></div>
-                                            </div>
-                                        </div>
-                                        <div class="relative">
-                                            <pre
-                                                class="text-sm leading-6 text-slate-50 flex ligatures-none overflow-auto"><code class="flex-none min-w-full p-5"><span class="token block"><span class="token doctype punctuation">&lt;!</span><span class="token doctype doctype-tag">doctype</span><span class="token doctype"> </span><span class="token doctype name">html</span><span class="token doctype punctuation">&gt;</span><span class="token plain"></span>
-</span><span class="token block"><span class="token plain"></span><span class="token tag punctuation">&lt;</span><span class="token tag">html</span><span class="token tag punctuation">&gt;</span><span class="token plain"></span>
-</span><span class="token block"><span class="token plain"></span><span class="token tag punctuation">&lt;</span><span class="token tag">head</span><span class="token tag punctuation">&gt;</span><span class="token plain"></span>
-</span><span class="token block"><span class="token plain">  </span><span class="token tag punctuation">&lt;</span><span class="token tag">meta</span><span class="token tag"> </span><span class="token tag attr-name">charset</span><span class="token tag attr-value punctuation attr-equals">=</span><span class="token tag attr-value punctuation">"</span><span class="token tag attr-value">UTF-8</span><span class="token tag attr-value punctuation">"</span><span class="token tag punctuation">&gt;</span><span class="token plain"></span>
-</span><span class="token block"><span class="token plain">  </span><span class="token tag punctuation">&lt;</span><span class="token tag">meta</span><span class="token tag"> </span><span class="token tag attr-name">name</span><span class="token tag attr-value punctuation attr-equals">=</span><span class="token tag attr-value punctuation">"</span><span class="token tag attr-value">viewport</span><span class="token tag attr-value punctuation">"</span><span class="token tag"> </span><span class="token tag attr-name">content</span><span class="token tag attr-value punctuation attr-equals">=</span><span class="token tag attr-value punctuation">"</span><span class="token tag attr-value">width=device-width, initial-scale=1.0</span><span class="token tag attr-value punctuation">"</span><span class="token tag punctuation">&gt;</span><span class="token plain"></span>
-</span><span class="token block -mx-5 pl-4 pr-5 border-l-4 border-sky-400 bg-sky-300/[0.15]"><span class="token plain">  </span><span class="token tag punctuation">&lt;</span><span class="token tag">link</span><span class="token tag"> </span><span class="token tag attr-name">href</span><span class="token tag attr-value punctuation attr-equals">=</span><span class="token tag attr-value punctuation">"</span><span class="token tag attr-value">/dist/output.css</span><span class="token tag attr-value punctuation">"</span><span class="token tag"> </span><span class="token tag attr-name">rel</span><span class="token tag attr-value punctuation attr-equals">=</span><span class="token tag attr-value punctuation">"</span><span class="token tag attr-value">stylesheet</span><span class="token tag attr-value punctuation">"</span><span class="token tag punctuation">&gt;</span><span class="token plain"></span>
-</span><span class="token block"><span class="token plain"></span><span class="token tag punctuation">&lt;/</span><span class="token tag">head</span><span class="token tag punctuation">&gt;</span><span class="token plain"></span>
-</span><span class="token block"><span class="token plain"></span><span class="token tag punctuation">&lt;</span><span class="token tag">body</span><span class="token tag punctuation">&gt;</span><span class="token plain"></span>
-</span><span class="token block -mx-5 pl-4 pr-5 border-l-4 border-sky-400 bg-sky-300/[0.15]"><span class="token plain">  </span><span class="token tag punctuation">&lt;</span><span class="token tag">h1</span><span class="token tag"> </span><span class="token tag attr-name">class</span><span class="token tag attr-value punctuation attr-equals">=</span><span class="token tag attr-value punctuation">"</span><span class="token tag attr-value">text-3xl font-bold underline</span><span class="token tag attr-value punctuation">"</span><span class="token tag punctuation">&gt;</span><span class="token plain"></span>
-</span><span class="token plain block -mx-5 pl-4 pr-5 border-l-4 border-sky-400 bg-sky-300/[0.15]">    Hello world!
-</span><span class="token block -mx-5 pl-4 pr-5 border-l-4 border-sky-400 bg-sky-300/[0.15]"><span class="token plain">  </span><span class="token tag punctuation">&lt;/</span><span class="token tag">h1</span><span class="token tag punctuation">&gt;</span><span class="token plain"></span>
-</span><span class="token block"><span class="token plain"></span><span class="token tag punctuation">&lt;/</span><span class="token tag">body</span><span class="token tag punctuation">&gt;</span><span class="token plain"></span>
-</span><span class="token block"><span class="token plain"></span><span class="token tag punctuation">&lt;/</span><span class="token tag">html</span><span class="token tag punctuation">&gt;</span>
-</span></code></pre>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ol> -->
+
                         </section>
-                        <!-- <section class="relative">
-                            <h2 class="text-slate-900 text-xl tracking-tight font-bold mb-3 dark:text-slate-200">What to
-                                read next</h2>
-                            <div class="mb-10 max-w-2xl prose prose-slate xl:mb-0 dark:prose-dark">
-                                <p>Get familiar with some of the core concepts that make Tailwind CSS different from
-                                    writing traditional CSS.</p>
-                            </div>
-                            <ul class="mt-10 grid grid-cols-1 gap-x-16 gap-y-8 xl:grid-cols-2 xl:gap-y-10">
-                                <li class="relative flex items-start">
-                                    <div
-                                        class="w-16 h-16 p-[0.1875rem] rounded-full ring-1 ring-slate-900/10 shadow overflow-hidden flex-none dark:bg-indigo-500 dark:highlight-white/20">
-                                        <div class="aspect-w-1 aspect-h-1 bg-[length:100%] dark:hidden"
-                                            style="background-image:url(/_next/static/media/utility-first.cd92b016.png)">
-                                        </div>
-                                        <div class="hidden aspect-w-1 aspect-h-1 bg-[length:100%] dark:block"
-                                            style="background-image:url(/_next/static/media/utility-first.f45fe5d8.png)">
-                                        </div>
-                                    </div>
-                                    <div class="peer group flex-auto ml-6">
-                                        <h3 class="mb-2 font-semibold text-slate-900 dark:text-slate-200"><a
-                                                class="before:absolute before:-inset-3 before:rounded-2xl sm:before:-inset-4"
-                                                href="/docs/utility-first">Utility-First Fundamentals<svg
-                                                    viewBox="0 0 3 6"
-                                                    class="ml-3 w-auto h-1.5 overflow-visible inline -mt-px text-slate-400 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100">
-                                                    <path d="M0 0L3 3L0 6" fill="none" stroke-width="2"
-                                                        stroke="currentColor" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg></a></h3>
-                                        <div class="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
-                                            <p>Using a utility-first workflow to build complex components from a
-                                                constrained set of primitive utilities.</p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="absolute -z-10 -inset-3 rounded-2xl bg-slate-50 dark:bg-slate-800/50 opacity-0 peer-hover:opacity-100 sm:-inset-4">
-                                    </div>
-                                </li>
-                                <li class="relative flex items-start">
-                                    <div
-                                        class="w-16 h-16 p-[0.1875rem] rounded-full ring-1 ring-slate-900/10 shadow overflow-hidden flex-none dark:bg-indigo-500 dark:highlight-white/20">
-                                        <div class="aspect-w-1 aspect-h-1 bg-[length:100%] dark:hidden"
-                                            style="background-image:url(/_next/static/media/mobile-first.b61c76c9.png)">
-                                        </div>
-                                        <div class="hidden aspect-w-1 aspect-h-1 bg-[length:100%] dark:block"
-                                            style="background-image:url(/_next/static/media/mobile-first.99f7f4f6.png)">
-                                        </div>
-                                    </div>
-                                    <div class="peer group flex-auto ml-6">
-                                        <h3 class="mb-2 font-semibold text-slate-900 dark:text-slate-200"><a
-                                                class="before:absolute before:-inset-3 before:rounded-2xl sm:before:-inset-4"
-                                                href="/docs/responsive-design">Responsive Design<svg viewBox="0 0 3 6"
-                                                    class="ml-3 w-auto h-1.5 overflow-visible inline -mt-px text-slate-400 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100">
-                                                    <path d="M0 0L3 3L0 6" fill="none" stroke-width="2"
-                                                        stroke="currentColor" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg></a></h3>
-                                        <div class="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
-                                            <p>Build fully responsive user interfaces that adapt to any screen size
-                                                using responsive modifiers.</p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="absolute -z-10 -inset-3 rounded-2xl bg-slate-50 dark:bg-slate-800/50 opacity-0 peer-hover:opacity-100 sm:-inset-4">
-                                    </div>
-                                </li>
-                                <li class="relative flex items-start">
-                                    <div
-                                        class="w-16 h-16 p-[0.1875rem] rounded-full ring-1 ring-slate-900/10 shadow overflow-hidden flex-none dark:bg-blue-500 dark:highlight-white/20">
-                                        <div class="aspect-w-1 aspect-h-1 bg-[length:100%] dark:hidden"
-                                            style="background-image:url(/_next/static/media/state-variants.85fa7325.png)">
-                                        </div>
-                                        <div class="hidden aspect-w-1 aspect-h-1 bg-[length:100%] dark:block"
-                                            style="background-image:url(/_next/static/media/state-variants.68635530.png)">
-                                        </div>
-                                    </div>
-                                    <div class="peer group flex-auto ml-6">
-                                        <h3 class="mb-2 font-semibold text-slate-900 dark:text-slate-200"><a
-                                                class="before:absolute before:-inset-3 before:rounded-2xl sm:before:-inset-4"
-                                                href="/docs/hover-focus-and-other-states">Hover, Focus &amp; Other
-                                                States<svg viewBox="0 0 3 6"
-                                                    class="ml-3 w-auto h-1.5 overflow-visible inline -mt-px text-slate-400 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100">
-                                                    <path d="M0 0L3 3L0 6" fill="none" stroke-width="2"
-                                                        stroke="currentColor" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg></a></h3>
-                                        <div class="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
-                                            <p>Style elements in interactive states like hover, focus, and more using
-                                                conditional modifiers.</p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="absolute -z-10 -inset-3 rounded-2xl bg-slate-50 dark:bg-slate-800/50 opacity-0 peer-hover:opacity-100 sm:-inset-4">
-                                    </div>
-                                </li>
-                                <li class="relative flex items-start">
-                                    <div
-                                        class="w-16 h-16 p-[0.1875rem] rounded-full ring-1 ring-slate-900/10 shadow overflow-hidden flex-none dark:bg-slate-600 dark:highlight-white/20">
-                                        <div class="aspect-w-1 aspect-h-1 bg-[length:100%] dark:hidden"
-                                            style="background-image:url(/_next/static/media/dark-mode.12db1733.png)">
-                                        </div>
-                                        <div class="hidden aspect-w-1 aspect-h-1 bg-[length:100%] dark:block"
-                                            style="background-image:url(/_next/static/media/dark-mode.8de2f1a4.png)">
-                                        </div>
-                                    </div>
-                                    <div class="peer group flex-auto ml-6">
-                                        <h3 class="mb-2 font-semibold text-slate-900 dark:text-slate-200"><a
-                                                class="before:absolute before:-inset-3 before:rounded-2xl sm:before:-inset-4"
-                                                href="/docs/dark-mode">Dark Mode<svg viewBox="0 0 3 6"
-                                                    class="ml-3 w-auto h-1.5 overflow-visible inline -mt-px text-slate-400 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100">
-                                                    <path d="M0 0L3 3L0 6" fill="none" stroke-width="2"
-                                                        stroke="currentColor" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg></a></h3>
-                                        <div class="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
-                                            <p>Optimize your site for dark mode directly in your HTML using the dark
-                                                mode modifier.</p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="absolute -z-10 -inset-3 rounded-2xl bg-slate-50 dark:bg-slate-800/50 opacity-0 peer-hover:opacity-100 sm:-inset-4">
-                                    </div>
-                                </li>
-                                <li class="relative flex items-start">
-                                    <div
-                                        class="w-16 h-16 p-[0.1875rem] rounded-full ring-1 ring-slate-900/10 shadow overflow-hidden flex-none dark:bg-sky-500 dark:highlight-white/20">
-                                        <div class="aspect-w-1 aspect-h-1 bg-[length:100%] dark:hidden"
-                                            style="background-image:url(/_next/static/media/component-driven.82a66c3c.png)">
-                                        </div>
-                                        <div class="hidden aspect-w-1 aspect-h-1 bg-[length:100%] dark:block"
-                                            style="background-image:url(/_next/static/media/component-driven.e5869471.png)">
-                                        </div>
-                                    </div>
-                                    <div class="peer group flex-auto ml-6">
-                                        <h3 class="mb-2 font-semibold text-slate-900 dark:text-slate-200"><a
-                                                class="before:absolute before:-inset-3 before:rounded-2xl sm:before:-inset-4"
-                                                href="/docs/reusing-styles">Reusing Styles<svg viewBox="0 0 3 6"
-                                                    class="ml-3 w-auto h-1.5 overflow-visible inline -mt-px text-slate-400 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100">
-                                                    <path d="M0 0L3 3L0 6" fill="none" stroke-width="2"
-                                                        stroke="currentColor" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg></a></h3>
-                                        <div class="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
-                                            <p>Manage duplication and keep your projects maintainable by creating
-                                                reusable abstractions.</p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="absolute -z-10 -inset-3 rounded-2xl bg-slate-50 dark:bg-slate-800/50 opacity-0 peer-hover:opacity-100 sm:-inset-4">
-                                    </div>
-                                </li>
-                                <li class="relative flex items-start">
-                                    <div
-                                        class="w-16 h-16 p-[0.1875rem] rounded-full ring-1 ring-slate-900/10 shadow overflow-hidden flex-none dark:bg-pink-500 dark:highlight-white/30">
-                                        <div class="aspect-w-1 aspect-h-1 bg-[length:100%] dark:hidden"
-                                            style="background-image:url(/_next/static/media/customization.28527ae6.png)">
-                                        </div>
-                                        <div class="hidden aspect-w-1 aspect-h-1 bg-[length:100%] dark:block"
-                                            style="background-image:url(/_next/static/media/customization.706308a2.png)">
-                                        </div>
-                                    </div>
-                                    <div class="peer group flex-auto ml-6">
-                                        <h3 class="mb-2 font-semibold text-slate-900 dark:text-slate-200"><a
-                                                class="before:absolute before:-inset-3 before:rounded-2xl sm:before:-inset-4"
-                                                href="/docs/adding-custom-styles">Customizing the Framework<svg
-                                                    viewBox="0 0 3 6"
-                                                    class="ml-3 w-auto h-1.5 overflow-visible inline -mt-px text-slate-400 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100">
-                                                    <path d="M0 0L3 3L0 6" fill="none" stroke-width="2"
-                                                        stroke="currentColor" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg></a></h3>
-                                        <div class="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
-                                            <p>Customize the framework to match your brand and extend it with your own
-                                                custom styles.</p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="absolute -z-10 -inset-3 rounded-2xl bg-slate-50 dark:bg-slate-800/50 opacity-0 peer-hover:opacity-100 sm:-inset-4">
-                                    </div>
-                                </li>
-                            </ul>
-                        </section> -->
                     </main>
                     <footer class="text-sm leading-6 mt-16">
                         <div
@@ -1239,8 +962,8 @@
 
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
-    <script src="../../node_modules/flowbite/dist/flowbite.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="../../../node_modules/flowbite/dist/flowbite.js"></script>
+    <script src="../../js/main.js"></script>
 
 
 </body>
