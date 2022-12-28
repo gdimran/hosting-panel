@@ -1060,10 +1060,6 @@ input[type="range"]::-ms-fill-lower {
   grid-column: span 5 / span 5;
 }
 
-.col-span-4 {
-  grid-column: span 4 / span 4;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1117,11 +1113,6 @@ input[type="range"]::-ms-fill-lower {
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
-}
-
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 .mr-3 {
@@ -1708,6 +1699,10 @@ input[type="range"]::-ms-fill-lower {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-x-16 {
@@ -2603,10 +2598,6 @@ input[type="range"]::-ms-fill-lower {
 
 .uppercase {
   text-transform: uppercase;
-}
-
-.lowercase {
-  text-transform: lowercase;
 }
 
 .capitalize {
@@ -3682,6 +3673,11 @@ input[type="range"]::-ms-fill-lower {
     line-height: 2rem;
   }
 
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .sm\:before\:-inset-4::before {
     content: var(--tw-content);
     top: -1rem;
@@ -3696,8 +3692,8 @@ input[type="range"]::-ms-fill-lower {
 }
 
 @media (min-width: 768px) {
-  .md\:col-span-4 {
-    grid-column: span 4 / span 4;
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
   }
 
   .md\:block {
