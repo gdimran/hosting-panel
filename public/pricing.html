@@ -102,7 +102,7 @@
                     <div class="grid grid-cols-12 gap-6">
                         <!-- Tab 1 -->
                         <div
-                            class="relative  col-span-full md:col-span-3 bg-green-500 shadow-md rounded-sm border border-gray-200">
+                            class="relative group hover:scale-110 col-span-full md:col-span-3 bg-white hover:bg-gradient-to-b hover:from-green-300 hover:to-green-500  shadow-md rounded-sm border border-gray-200 transition-colors duration-300 transform">
                             <div class="absolute top-0 left-0 right-0 h-0.5 bg-green-500" aria-hidden="true"></div>
                             <div class="px-5 pt-5 pb-6 border-b border-gray-200">
                                 <header class="flex items-center justify-center mb-2">
@@ -113,16 +113,18 @@
                                                 d="M12 17a.833.833 0 01-.833-.833 3.333 3.333 0 00-3.334-3.334.833.833 0 110-1.666 3.333 3.333 0 003.334-3.334.833.833 0 111.666 0 3.333 3.333 0 003.334 3.334.833.833 0 110 1.666 3.333 3.333 0 00-3.334 3.334c0 .46-.373.833-.833.833z" />
                                         </svg>
                                     </div>
-                                    <h3 class="text-5xl text-gray-800 font-bold text-center">Basic</h3>
+                                    <h3 class="text-5xl text-gray-800 font-bold text-center group-hover:text-white">
+                                        Basic</h3>
                                 </header>
-                                <div class="text-lg my-5 text-center">Ideal for individuals that need a custom solution
+                                <div class="text-lg my-5 text-center group-hover:text-white">Ideal for individuals that
+                                    need a custom solution
                                     with custom
                                     tools.</div>
                                 <!-- Price -->
-                                <div class="text-gray-800 font-bold mb-4 text-center">
+                                <div class="text-gray-800 font-bold mb-4 text-center group-hover:text-white">
                                     <span class="text-4xl">$</span><span class="text-6xl"
                                         x-text="annual ? '14' : '19'">14</span><span
-                                        class="text-gray-500 font-medium text-sm">/mo</span>
+                                        class="text-gray-500 font-medium text-sm group-hover:text-white">/mo</span>
                                 </div>
 
                             </div>
@@ -131,64 +133,75 @@
 
                                 <div class="mt-8 space-y-8 text-lg">
                                     <div class="flex items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
-                                            viewBox="0 0 20 20" fill="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="w-5 h-5 text-green-500 group-hover:text-white" viewBox="0 0 20 20"
+                                            fill="currentColor">
                                             <path fill-rule="evenodd"
                                                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                                 clip-rule="evenodd"></path>
                                         </svg>
 
-                                        <span class="mx-4 text-gray-700 dark:text-gray-300">5 domains</span>
+                                        <span class="mx-4 text-gray-700 dark:text-gray-300 group-hover:text-white">5
+                                            domains</span>
                                     </div>
 
                                     <div class="flex items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
-                                            viewBox="0 0 20 20" fill="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="w-5 h-5 text-green-500 group-hover:text-white" viewBox="0 0 20 20"
+                                            fill="currentColor">
                                             <path fill-rule="evenodd"
                                                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                                 clip-rule="evenodd"></path>
                                         </svg>
 
-                                        <span class="mx-4 text-gray-700 dark:text-gray-300">WP Toolkit SE</span>
+                                        <span class="mx-4 text-gray-700 dark:text-gray-300 group-hover:text-white">WP
+                                            Toolkit SE</span>
                                     </div>
 
                                     <div class="flex items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
-                                            viewBox="0 0 20 20" fill="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="w-5 h-5 text-green-500 group-hover:text-white" viewBox="0 0 20 20"
+                                            fill="currentColor">
                                             <path fill-rule="evenodd"
                                                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                                 clip-rule="evenodd"></path>
                                         </svg>
 
-                                        <span class="mx-4 text-gray-700 dark:text-gray-300">Subscription
+                                        <span
+                                            class="mx-4 text-gray-700 dark:text-gray-300 group-hover:text-white">Subscription
                                             Management</span>
                                     </div>
 
                                     <div class="flex items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
-                                            viewBox="0 0 20 20" fill="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="w-5 h-5 text-green-500 group-hover:text-white" viewBox="0 0 20 20"
+                                            fill="currentColor">
                                             <path fill-rule="evenodd"
                                                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                                 clip-rule="evenodd"></path>
                                         </svg>
 
-                                        <span class="mx-4 text-gray-700 dark:text-gray-300">Account Management</span>
+                                        <span
+                                            class="mx-4 text-gray-700 dark:text-gray-300 group-hover:text-white">Account
+                                            Management</span>
                                     </div>
 
                                     <div class="flex items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
-                                            viewBox="0 0 20 20" fill="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="w-5 h-5 text-green-500 group-hover:text-white" viewBox="0 0 20 20"
+                                            fill="currentColor">
                                             <path fill-rule="evenodd"
                                                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                                 clip-rule="evenodd"></path>
                                         </svg>
 
-                                        <span class="mx-4 text-gray-700 dark:text-gray-300">5 exclusive widgets</span>
+                                        <span class="mx-4 text-gray-700 dark:text-gray-300 group-hover:text-white">5
+                                            exclusive widgets</span>
                                     </div>
                                 </div>
                                 <!-- CTA -->
                                 <button
-                                    class="w-full px-4 py-3 mt-10 font-bold tracking-wide text-blue-600 capitalize transition-colors duration-300 transform bg-white border border-blue-600  rounded-md hover:bg-blue-600 hover:text-white focus:outline-none focus:bg-blue-600 text-xl">
+                                    class="w-full px-4 py-3 mt-10 font-bold tracking-wide text-green-600 capitalize transition-colors duration-300 transform bg-white border border-green-600  rounded-md hover:bg-green-600 hover:text-white focus:outline-none focus:bg-green-600 text-xl ">
                                     Choose Basic
                                 </button>
                             </div>
@@ -196,27 +209,28 @@
                         </div>
                         <!-- Tab 2 -->
                         <div
-                            class="relative col-span-full md:col-span-3 bg-white shadow-md rounded-sm border border-gray-200">
-                            <div class="absolute top-0 left-0 right-0 h-0.5 bg-blue-500" aria-hidden="true"></div>
+                            class="relative group col-span-full md:col-span-3 hover:scale-110 hover:bg-gradient-to-b hover:from-lime-400 hover:to-lime-500 shadow-md rounded-sm border border-gray-200 transition-colors duration-300 transform">
+                            <div class="absolute top-0 left-0 right-0 h-0.5 bg-lime-500" aria-hidden="true"></div>
                             <div class="px-5 pt-5 pb-6 border-b border-gray-200">
                                 <header class="flex items-center justify-center mb-2">
                                     <div
-                                        class="w-6 h-6 rounded-full flex-shrink-0 bg-gradient-to-tr from-blue-500 to-blue-300 mr-3">
+                                        class="w-6 h-6 rounded-full flex-shrink-0 bg-gradient-to-tr from-lime-500 to-lime-300 mr-3">
                                         <svg class="w-6 h-6 fill-current text-white" viewBox="0 0 24 24">
                                             <path
                                                 d="M12 17a.833.833 0 01-.833-.833 3.333 3.333 0 00-3.334-3.334.833.833 0 110-1.666 3.333 3.333 0 003.334-3.334.833.833 0 111.666 0 3.333 3.333 0 003.334 3.334.833.833 0 110 1.666 3.333 3.333 0 00-3.334 3.334c0 .46-.373.833-.833.833z" />
                                         </svg>
                                     </div>
-                                    <h3 class="text-5xl text-gray-800 font-bold">Standard</h3>
+                                    <h3 class="text-5xl text-gray-800 font-bold group-hover:text-white">Standard</h3>
                                 </header>
-                                <div class="text-lg my-5 text-center">Ideal for individuals that need a custom solution
+                                <div class="text-lg my-5 text-center group-hover:text-white">Ideal for individuals that
+                                    need a custom solution
                                     with custom
                                     tools.</div>
                                 <!-- Price -->
-                                <div class="text-gray-800 font-bold mb-4 text-center">
+                                <div class="text-gray-800 font-bold mb-4 text-center group-hover:text-white">
                                     <span class="text-4xl">$</span><span class="text-6xl"
                                         x-text="annual ? '34' : '39'">34</span><span
-                                        class="text-gray-500 font-medium text-sm">/mo</span>
+                                        class="text-gray-500 font-medium text-sm group-hover:text-white">/mo</span>
                                 </div>
                             </div>
                             <div class="px-10 pt-4 pb-5 mb-10">
@@ -224,71 +238,82 @@
 
                                 <div class="mt-8 space-y-8 text-lg">
                                     <div class="flex items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
-                                            viewBox="0 0 20 20" fill="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="w-5 h-5 text-lime-500 group-hover:text-white" viewBox="0 0 20 20"
+                                            fill="currentColor">
                                             <path fill-rule="evenodd"
                                                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                                 clip-rule="evenodd"></path>
                                         </svg>
 
-                                        <span class="mx-4 text-gray-700 dark:text-gray-300">10 domains</span>
+                                        <span class="mx-4 text-gray-700 dark:text-gray-300 group-hover:text-white">10
+                                            domains</span>
                                     </div>
 
                                     <div class="flex items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
-                                            viewBox="0 0 20 20" fill="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="w-5 h-5 text-lime-500 group-hover:text-white" viewBox="0 0 20 20"
+                                            fill="currentColor">
                                             <path fill-rule="evenodd"
                                                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                                 clip-rule="evenodd"></path>
                                         </svg>
 
-                                        <span class="mx-4 text-gray-700 dark:text-gray-300">WP Toolkit SE</span>
+                                        <span class="mx-4 text-gray-700 dark:text-gray-300 group-hover:text-white">WP
+                                            Toolkit SE</span>
                                     </div>
 
                                     <div class="flex items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
-                                            viewBox="0 0 20 20" fill="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="w-5 h-5 text-lime-500 group-hover:text-white" viewBox="0 0 20 20"
+                                            fill="currentColor">
                                             <path fill-rule="evenodd"
                                                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                                 clip-rule="evenodd"></path>
                                         </svg>
 
-                                        <span class="mx-4 text-gray-700 dark:text-gray-300">Subscription
+                                        <span
+                                            class="mx-4 text-gray-700 dark:text-gray-300 group-hover:text-white">Subscription
                                             Management</span>
                                     </div>
 
                                     <div class="flex items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
-                                            viewBox="0 0 20 20" fill="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="w-5 h-5 text-lime-500 group-hover:text-white" viewBox="0 0 20 20"
+                                            fill="currentColor">
                                             <path fill-rule="evenodd"
                                                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                                 clip-rule="evenodd"></path>
                                         </svg>
 
-                                        <span class="mx-4 text-gray-700 dark:text-gray-300">Account Management</span>
+                                        <span
+                                            class="mx-4 text-gray-700 dark:text-gray-300 group-hover:text-white">Account
+                                            Management</span>
                                     </div>
 
                                     <div class="flex items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
-                                            viewBox="0 0 20 20" fill="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="w-5 h-5 text-lime-500 group-hover:text-white" viewBox="0 0 20 20"
+                                            fill="currentColor">
                                             <path fill-rule="evenodd"
                                                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                                 clip-rule="evenodd"></path>
                                         </svg>
 
-                                        <span class="mx-4 text-gray-700 dark:text-gray-300">5 exclusive widgets</span>
+                                        <span class="mx-4 text-gray-700 dark:text-gray-300 group-hover:text-white">5
+                                            exclusive widgets</span>
                                     </div>
                                 </div>
                                 <!-- CTA -->
                                 <button
-                                    class="w-full px-4 py-3 mt-10 font-bold tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600 text-xl">
+                                    class="w-full px-4 py-3 mt-10 font-bold tracking-wide text-white capitalize transition-colors duration-300 transform bg-lime-500 rounded-md hover:bg-lime-600 focus:outline-none focus:bg-lime-600 text-xl">
                                     Choose Standard
                                 </button>
                             </div>
                         </div>
                         <!-- Tab 3 -->
                         <div
-                            class="relative col-span-full md:col-span-3 bg-white shadow-md rounded-sm border border-gray-200">
+                            class="relative hover:scale-110 group col-span-full md:col-span-3 bg-white shadow-md rounded-sm border border-gray-200">
                             <div class="absolute top-0 left-0 right-0 h-0.5 bg-indigo-500" aria-hidden="true"></div>
                             <div class="px-5 pt-5 pb-6 border-b border-gray-200">
                                 <header class="flex items-center justify-center mb-2">
@@ -382,7 +407,7 @@
                         </div>
                         <!-- Tab 4 -->
                         <div
-                            class="relative col-span-full md:col-span-3 bg-white shadow-md rounded-sm border border-gray-200">
+                            class="relative hover:scale-110 group col-span-full md:col-span-3 bg-white shadow-md rounded-sm border border-gray-200 transition-colors duration-300 transform">
                             <div class="absolute top-0 left-0 right-0 h-0.5 bg-indigo-500" aria-hidden="true"></div>
                             <div class="px-5 pt-5 pb-6 border-b border-gray-200">
                                 <header class="flex items-center justify-center mb-2">
